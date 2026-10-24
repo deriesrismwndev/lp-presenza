@@ -53,21 +53,6 @@ presenza-landing/
 
 Ingin mengubah teks? Edit `src/data/content.ts`. Mengubah warna? Edit `tailwind.config.ts`. Mengubah isi section? Edit file di `src/components/sections/`.
 
-## Menempelkan logo, favicon, dan gambar lain
-
-Semua file diletakkan di `public/images/...`.
-
-| File              | Letak                                                  | Keterangan                                                                                                                           |
-| ----------------- | ------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------ |
-| Logo utama        | `public/images/logo/logo-presenza.png`                 | Placeholder sudah ada. (disarankan SVG/PNG transparan). Ukuran acuan desain: 180x75 px desktop.                                      |
-| Logo format PNG   | `public/images/logo/logo-presenza2.png`                | Jika memakai PNG, ubah satu baris `logo.src` di `src/config/site.ts` menjadi `"/images/logo/logo.png"`. Gunakan PNG 2x (360x150 px). |
-| Favicon           | `public/images/favicon/favicon.ico` (32x32 atau 48x48) | Sudah dirujuk di `src/app/layout.tsx`.                                                                                               |
-| Favicon SVG       | `public/images/favicon/favicon.svg`                    | Placeholder sudah ada, ganti dengan ikon "P" Presenza.                                                                               |
-| Apple touch icon  | `public/images/favicon/apple-touch-icon.png` (180x180) | Untuk layar utama iPhone.                                                                                                            |
-| Gambar Open Graph | `public/images/og/og-image.png` (1200x630)             | Tampil saat tautan dibagikan di WhatsApp/sosial media.                                                                               |
-
-Setelah mengganti file, hentikan dan jalankan ulang `npm run dev`; bila favicon belum berubah, bersihkan cache browser.
-
 ## SEO yang sudah diterapkan
 
 - `title` (dengan template) dan `meta description`, `keywords`
