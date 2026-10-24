@@ -27,9 +27,9 @@ Teks title/description/keywords ada di `src/config/site.ts`.
 presenza-landing/
 ├── public/                     # Aset statis (diakses dari "/")
 │   └── images/
-│       ├── logo/               # Logo perusahaan  <- TEMPEL LOGO DI SINI
-│       ├── favicon/            # Favicon & apple-touch-icon  <- TEMPEL FAVICON DI SINI
-│       └── og/                 # Gambar Open Graph (1200x630)  <- TEMPEL og-image.png DI SINI
+│       ├── logo/               # Logo perusahaan  
+│       ├── favicon/            # Favicon & apple-touch-icon 
+│       └── og/                 # Gambar Open Graph (1200x630) 
 ├── src/
 │   ├── app/                    # Routing Next.js
 │   │   ├── layout.tsx          # Layout root, font, metadata SEO, Open Graph, canonical
@@ -46,7 +46,7 @@ presenza-landing/
 │   └── lib/whatsapp.ts         # Helper pembuat tautan WhatsApp
 ├── tailwind.config.ts          # Token warna & tipografi identitas Presenza
 ├── next.config.mjs
-├── .env.example                # Contoh environment (aman di-push)
+├── .env.example                
 ├── .gitignore
 └── package.json
 ```
