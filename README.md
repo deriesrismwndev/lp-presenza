@@ -63,21 +63,3 @@ Ingin mengubah teks? Edit `src/data/content.ts`. Mengubah warna? Edit `tailwind.
 - Performa: `next/image` (AVIF/WebP), `next/font` (Inter, `display: swap`), halaman hampir seluruhnya Server Component, tanpa dependensi berat
 
 Setelah deploy, daftarkan `https://domain-anda/sitemap.xml` di Google Search Console.
-
-## Aturan Git / GitHub
-
-**Boleh di-push:**
-`src/`, `public/` (termasuk logo, favicon, gambar), `package.json`, `package-lock.json`, `tsconfig.json`, `next.config.mjs`, `tailwind.config.ts`, `postcss.config.mjs`, `.eslintrc.json`, `.env.example`, `.gitignore`, `README.md`
-
-**Jangan di-push** (sudah diatur di `.gitignore`):
-`node_modules/`, `.next/`, `out/`, `.env`, `.env.local` dan semua `.env.*` selain `.env.example`, `*.tsbuildinfo`, `next-env.d.ts`, folder `.vercel/`, log, serta file editor/OS (`.DS_Store`, `.idea/`)
-
-```bash
-git init
-git add .
-git status          # pastikan .env.local & node_modules tidak ikut
-git commit -m "feat: landing page Presenza"
-git branch -M main
-git remote add origin https://github.com/<username>/presenza-landing.git
-git push -u origin main
-```
